@@ -26,7 +26,7 @@ jobs:
           
       - name: Set up resource
         run: |
-          cp ${{ github.workspace }}/target/*.jar ${{ github.workspace }}/docker/
+          cp ${{ github.workspace }}/target/*-with-dependencies.jar ${{ github.workspace }}/docker/
           cp ${{ github.workspace }}/config.cfg ${{ github.workspace }}/docker/
           cd ${{ github.workspace }}/docker/
 
